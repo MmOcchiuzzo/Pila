@@ -46,7 +46,7 @@ def black_widow(personajes):
 print(black_widow(personajes))
 
 #d)
-def personajes_iniciales(personajes, letras_iniciales):
-    personajes_filtrados = [personaje["nombre"] for personaje in personajes if personaje["nombre"][0] in letras_iniciales]
-    return personajes_filtrados
-print(personajes_iniciales(personajes, ['C', 'D', 'G']))
+def personajes_letras(personajes, letras):
+    personajes_inicial = [personaje["nombre"] for personaje in personajes if personaje["nombre"][0] in letras]
+    return personajes_inicial
+print(personajes_letras(personajes, ['C', 'D', 'G']))
